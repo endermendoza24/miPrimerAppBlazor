@@ -1,0 +1,10 @@
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Model\bin\Debug\netcoreapp3.1\BlazorCRUD.Model.deps.json
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Model\bin\Debug\netcoreapp3.1\BlazorCRUD.Model.dll
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Model\bin\Debug\netcoreapp3.1\BlazorCRUD.Model.pdb
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netcoreapp3.1\BlazorCRUD.Model.csproj.AssemblyReference.cache
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netcoreapp3.1\BlazorCRUD.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netcoreapp3.1\BlazorCRUD.Model.AssemblyInfoInputs.cache
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netcoreapp3.1\BlazorCRUD.Model.AssemblyInfo.cs
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netcoreapp3.1\BlazorCRUD.Model.csproj.CoreCompileInputs.cache
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netcoreapp3.1\BlazorCRUD.Model.dll
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netcoreapp3.1\BlazorCRUD.Model.pdb
