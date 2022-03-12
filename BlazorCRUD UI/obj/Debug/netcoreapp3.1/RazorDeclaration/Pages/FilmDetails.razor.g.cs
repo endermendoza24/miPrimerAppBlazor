@@ -75,6 +75,13 @@ using BlazorCRUD_UI.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\Pages\FilmDetails.razor"
+using BlazorCRUD.Model;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/filmdetails")]
     public partial class FilmDetails : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -83,6 +90,24 @@ using BlazorCRUD_UI.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 34 "C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\Pages\FilmDetails.razor"
+       
+    Film film = new Film();
+
+    protected void Cancel() {
+
+    }
+
+    protected async Task SaveFilm()
+    {
+        await FilmService.SaveFilm(film);
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IFilmService FilmService { get; set; }
     }
 }
 #pragma warning restore 1591

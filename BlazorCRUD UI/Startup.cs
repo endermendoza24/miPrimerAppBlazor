@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BlazorCRUD_UI.Data;
 
 namespace BlazorCRUD_UI
 {
@@ -19,7 +20,7 @@ namespace BlazorCRUD_UI
         {
             Configuration = configuration;
         }
-
+           
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -28,7 +29,10 @@ namespace BlazorCRUD_UI
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            
+            services.AddScoped<IFilmService, FilmService>();
+
+            var sqlConnectionConfiguration = new SqlConfiguration(Configuration.GetConnectionString("SqlConnection"));
+            services.AddSingleton(sqlConnectionConfiguration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

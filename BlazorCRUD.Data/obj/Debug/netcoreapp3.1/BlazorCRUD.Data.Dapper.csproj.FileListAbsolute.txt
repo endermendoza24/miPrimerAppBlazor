@@ -1,10 +1,13 @@
 C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Data\bin\Debug\netcoreapp3.1\BlazorCRUD.Data.Dapper.deps.json
 C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Data\bin\Debug\netcoreapp3.1\BlazorCRUD.Data.Dapper.dll
 C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Data\bin\Debug\netcoreapp3.1\BlazorCRUD.Data.Dapper.pdb
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Data\bin\Debug\netcoreapp3.1\BlazorCRUD.Model.dll
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Data\bin\Debug\netcoreapp3.1\BlazorCRUD.Model.pdb
 C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Data\obj\Debug\netcoreapp3.1\BlazorCRUD.Data.Dapper.csproj.AssemblyReference.cache
 C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Data\obj\Debug\netcoreapp3.1\BlazorCRUD.Data.Dapper.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Data\obj\Debug\netcoreapp3.1\BlazorCRUD.Data.Dapper.AssemblyInfoInputs.cache
 C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Data\obj\Debug\netcoreapp3.1\BlazorCRUD.Data.Dapper.AssemblyInfo.cs
 C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Data\obj\Debug\netcoreapp3.1\BlazorCRUD.Data.Dapper.csproj.CoreCompileInputs.cache
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Data\obj\Debug\netcoreapp3.1\BlazorCRUD.Data.Dapper.csproj.CopyComplete
 C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Data\obj\Debug\netcoreapp3.1\BlazorCRUD.Data.Dapper.dll
 C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Data\obj\Debug\netcoreapp3.1\BlazorCRUD.Data.Dapper.pdb
