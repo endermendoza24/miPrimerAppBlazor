@@ -59,3 +59,7 @@ C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\obj\Debug\netcor
 C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\obj\Debug\netcoreapp3.1\BlazorCRUD UI.dll
 C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\obj\Debug\netcoreapp3.1\BlazorCRUD UI.pdb
 C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\obj\Debug\netcoreapp3.1\BlazorCRUD UI.genruntimeconfig.cache
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\FilmList.razor.g.cs
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\obj\Debug\netcoreapp3.1\Razor\Pages\FilmList.razor.g.cs
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\FilmDelete.razor.g.cs
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\obj\Debug\netcoreapp3.1\Razor\Pages\FilmDelete.razor.g.cs

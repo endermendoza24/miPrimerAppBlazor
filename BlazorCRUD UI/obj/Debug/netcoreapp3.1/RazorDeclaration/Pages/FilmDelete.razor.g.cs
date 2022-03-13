@@ -76,15 +76,14 @@ using BlazorCRUD_UI.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\Pages\FilmDetails.razor"
+#line 2 "C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\Pages\FilmDelete.razor"
 using BlazorCRUD.Model;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/filmdetails")]
-    [Microsoft.AspNetCore.Components.RouteAttribute("/filmdetails/{id:int}")]
-    public partial class FilmDetails : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/filmdelete/{id:int}")]
+    public partial class FilmDelete : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -92,42 +91,40 @@ using BlazorCRUD.Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 35 "C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\Pages\FilmDetails.razor"
+#line 42 "C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\Pages\FilmDelete.razor"
        
+    Film film = new Film();
+
     [Parameter]
     public int id { get; set; }
 
-    Film film = new Film();
-
-    protected void Cancel() {
-        NavigationManager.NavigateTo("/filmlist");
-    }
-
-    protected async Task SaveFilm()
+    protected async Task DeleteFilm()
     {
-        await FilmService.SaveFilm(film);
-
+        await FilmService.DeleteFilm(id);
         NavigationManager.NavigateTo("/filmlist");
+
     }
 
-    // metodo del ciclo de vida
+    //protected override async Task OnInitalizedAsync()
+    //{
+    //    film = await FilmService.GetDetails(id);
+    //}
+
     protected override async Task OnInitializedAsync()
     {
-        if(id == 0)
-        {
-            film.ReleaseDate = DateTime.Now;
-        }
-        else
-        {
-            film = await FilmService.GetDetails(id);
-        }
+        film = await FilmService.GetDetails(id);
+    }
+
+    protected void Cancel()
+    {
+        NavigationManager.NavigateTo("/filmlist");
     }
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IFilmService FilmService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IFilmService FilmService { get; set; }
     }
 }
 #pragma warning restore 1591

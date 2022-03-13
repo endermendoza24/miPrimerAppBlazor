@@ -76,15 +76,14 @@ using BlazorCRUD_UI.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\Pages\FilmDetails.razor"
+#line 2 "C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\Pages\FilmList.razor"
 using BlazorCRUD.Model;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/filmdetails")]
-    [Microsoft.AspNetCore.Components.RouteAttribute("/filmdetails/{id:int}")]
-    public partial class FilmDetails : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/filmlist")]
+    public partial class FilmList : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -92,34 +91,19 @@ using BlazorCRUD.Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 35 "C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\Pages\FilmDetails.razor"
-       
-    [Parameter]
-    public int id { get; set; }
+#line 42 "C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\Pages\FilmList.razor"
+             
+    private IEnumerable<Film> films;
 
-    Film film = new Film();
-
-    protected void Cancel() {
-        NavigationManager.NavigateTo("/filmlist");
-    }
-
-    protected async Task SaveFilm()
-    {
-        await FilmService.SaveFilm(film);
-
-        NavigationManager.NavigateTo("/filmlist");
-    }
-
-    // metodo del ciclo de vida
     protected override async Task OnInitializedAsync()
     {
-        if(id == 0)
+        try
         {
-            film.ReleaseDate = DateTime.Now;
+            films = await FilmService.GetAllFilms();
         }
-        else
+        catch (Exception)
         {
-            film = await FilmService.GetDetails(id);
+
         }
     }
 
@@ -127,7 +111,6 @@ using BlazorCRUD.Model;
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IFilmService FilmService { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
     }
 }
 #pragma warning restore 1591

@@ -21,17 +21,17 @@ namespace BlazorCRUD_UI
 
         public Task<bool> DeleteFilm(int id)
         {
-            throw new NotImplementedException();
+            return _filmRepository.DeleteFilm(id);
         }
 
-        public Task<IEnumerable<Film>> GetAllFilm()
+        public Task<IEnumerable<Film>> GetAllFilms()
         {
-            throw new NotImplementedException();
+            return _filmRepository.GetAllFilms();
         }
 
         public Task<Film> GetDetails(int id)
         {
-            throw new NotImplementedException();
+            return _filmRepository.GetFilmDetails(id);
         }
 
         public Task<bool> SaveFilm(Film film)
@@ -39,7 +39,7 @@ namespace BlazorCRUD_UI
             if (film.Id == 0)
                 return _filmRepository.InsertFilm(film);
             else
-                return null;
+                return _filmRepository.UpdateFilm(film);
         }
     }
 }

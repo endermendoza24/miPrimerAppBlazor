@@ -83,7 +83,7 @@ using BlazorCRUD_UI.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 19 "C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\Shared\NavMenu.razor"
+#line 29 "C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD UI\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

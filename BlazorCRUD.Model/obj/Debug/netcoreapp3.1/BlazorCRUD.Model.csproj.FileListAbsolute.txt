@@ -7,3 +7,4 @@ C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Model\obj\Debug\net
 C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netcoreapp3.1\BlazorCRUD.Model.csproj.CoreCompileInputs.cache
 C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netcoreapp3.1\BlazorCRUD.Model.dll
 C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netcoreapp3.1\BlazorCRUD.Model.pdb
+C:\Users\ENDERSSONMENDOZA\source\repos\BlazorCRUD\BlazorCRUD.Model\obj\Debug\netcoreapp3.1\BlazorCRUD.Model.csproj.AssemblyReference.cache

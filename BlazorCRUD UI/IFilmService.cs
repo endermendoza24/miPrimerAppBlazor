@@ -8,7 +8,7 @@ namespace BlazorCRUD_UI
 {
     public interface IFilmService
     {
-        Task<IEnumerable<Film>> GetAllFilm();
+        Task<IEnumerable<Film>> GetAllFilms();
         Task<Film> GetDetails(int id);
         Task<bool> DeleteFilm(int id);
         Task<bool> SaveFilm(Film film);

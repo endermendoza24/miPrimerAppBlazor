@@ -1,6 +1,7 @@
 ﻿@page "/filmdetails"
+@page "/filmdetails/{id:int}"
 @using BlazorCRUD.Model 
-
+@inject NavigationManager NavigationManager
 @inject IFilmService FilmService
 
 <h1>Film details</h1>
@@ -32,14 +33,32 @@
 </EditForm>
 
 @code {
+    [Parameter]
+    public int id { get; set; }
+
     Film film = new Film();
 
     protected void Cancel() {
-
+        NavigationManager.NavigateTo("/filmlist");
     }
 
     protected async Task SaveFilm()
     {
         await FilmService.SaveFilm(film);
+
+        NavigationManager.NavigateTo("/filmlist");
+    }
+
+    // metodo del ciclo de vida
+    protected override async Task OnInitializedAsync()
+    {
+        if(id == 0)
+        {
+            film.ReleaseDate = DateTime.Now;
+        }
+        else
+        {
+            film = await FilmService.GetDetails(id);
+        }
     }
 }
